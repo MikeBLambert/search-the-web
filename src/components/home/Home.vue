@@ -2,7 +2,7 @@
     <section>
         <h2>Home</h2>
         <p>
-            Welcome to the world's premier site for skimming new! If you're too lazy to read full articles?
+            Welcome to the world's premier site for skimming the news! If you're too lazy to read full articles?
             We've got you covered. Quick News Now Fast tells gives you all you care to know about
             a given topic so that you'll be well prepared about the day's news.
         </p>
