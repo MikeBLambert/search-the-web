@@ -1,8 +1,12 @@
 <template>
     <form @submit.prevent="handleSubmit">
-        <input v-model="search">
-        <button>Go</button>
-        
+        <div id="search-bar">
+            <label>
+                Search News Now Fast!
+                <input v-model="search">
+                <button>Go</button>
+            </label>
+        </div>
     </form>
 </template>
 
@@ -25,5 +29,21 @@ export default {
 </script>
 
 <style>
+
+
+
+label {
+    float: center;
+    font-family: impact;
+    font-size: 25px;
+}
+
+button {
+    border-radius: 15px;
+}
+
+#search-bar {
+    text-align: center;
+}
 
 </style>
