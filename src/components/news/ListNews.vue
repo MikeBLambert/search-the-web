@@ -27,38 +27,38 @@ import NewsSearch from './NewsSearch.vue';
 import NewsDescription from './NewsDescription';
 
 export default {
-    data() {
-        return {
-            articles: null,
-            search: '',
-            selected: null
-        };
+  data() {
+    return {
+      articles: null,
+      search: '',
+      selected: null
+    };
+  },
+  props: {
+  },
+  components: {
+    News,
+    NewsSearch,
+    NewsDescription
+  },
+  created() {
+  },
+  methods: {
+    handleSearch(search) {
+      this.search = search;
+      this.searchNews();
     },
-    props: {
+    searchNews() {
+      api.getNews(this.search)
+        .then(response => {
+          this.articles = response.articles;
+        });
     },
-    components: {
-        News,
-        NewsSearch,
-        NewsDescription
-    },
-    created() {
-        },
-    methods: {
-        handleSearch(search) {
-            this.search = search;
-            this.searchNews();
-        },
-        searchNews() {
-            api.getNews(this.search)
-            .then(response => {
-                this.articles = response.articles;
-            })
-        },
-        handleSelect(article) {
-            this.selected = article;
-        }
-    },
-}
+    handleSelect(article) {
+      this.selected = article;
+    }
+  },
+};
 </script>
 
 <style>

@@ -12,19 +12,19 @@
 
 <script>
 export default {
-    props: {
-        onSearch: Function
-    },
-    data() {
-        return {
-            search:''
-        }
-    },
-    methods:{
-        handleSubmit() {
-            this.onSearch(this.search);
-        }
+  props: {
+    onSearch: Function
+  },
+  data() {
+    return {
+      search:''
+    };
+  },
+  methods:{
+    handleSubmit() {
+      this.onSearch(this.search);
     }
+  }
 };
 </script>
 

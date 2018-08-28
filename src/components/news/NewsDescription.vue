@@ -6,14 +6,14 @@
 
 <script>
 export default {
-    data() {
-        return {
-        }
-    },
-    props: {
-        article: Object
-    },
-}
+  data() {
+    return {
+    };
+  },
+  props: {
+    article: Object
+  },
+};
 </script>
 
 <style scoped>

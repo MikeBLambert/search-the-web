@@ -7,16 +7,16 @@
 <script>
 
 export default {
-    props: {
-        article: Object,
-        onSelect: Function
-    },
-    methods: {
-        handleClick() {
-            this.onSelect(this.article);          
-        }
-    },
-}
+  props: {
+    article: Object,
+    onSelect: Function
+  },
+  methods: {
+    handleClick() {
+      this.onSelect(this.article);          
+    }
+  },
+};
 </script>
 
 <style>
